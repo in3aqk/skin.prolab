@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- PROLAB SETTINGS page-->
+<!-- PROLAB HOME-->
 <window id="9001">
 	<defaultcontrol always="true">9010</defaultcontrol>
 	<controls>
+		<include>CommonBackground</include>
 		<control type="image" id="9015">
 			<description>Logo Prolab</description>
-			<top>0</top>
-			<left>500</left>
-			<width>300</width>
+			<top>300</top>
+			<left>520</left>
+			<width>200</width>
+			<height>56</height>
 			<visible>true</visible>
 			<colordiffuse>FFFFFFFF</colordiffuse>
 			<fadetime>200</fadetime>
-			<texture>logo_prolab.png</texture>
+			<texture>logo_prolab_small.png</texture>
 			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="button" id="9010">
@@ -25,12 +27,12 @@
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<onclick>ActivateWindow(Settings)</onclick>
-			<onleft>9014</onleft>
-			<onright>9011</onright>
+			<onleft>9015</onleft>
+			<onright>9012</onright>
 		</control>
 		<control type="button" id="9012">
 			<description>Libreelec settings</description>
-			<left>550</left>
+			<left>300</left>
 			<top>500</top>
 			<width>200</width>
 			<height>50</height>
@@ -39,12 +41,12 @@
 			<textcolor>white</textcolor>
 			<focusedcolor>white</focusedcolor>
 			<onclick>ActivateWindow(SystemInfo)</onclick>
-			<onleft>9011</onleft>
+			<onleft>9010</onleft>
 			<onright>9013</onright>
 		</control>
 		<control type="button" id="9013">
 			<description>Profiles</description>
-			<left>800</left>
+			<left>550</left>
 			<top>500</top>
 			<width>200</width>
 			<height>50</height>
@@ -58,7 +60,7 @@
 		</control>
 		<control type="button" id="9014">
 			<description>Addons</description>
-			<left>1050</left>
+			<left>800</left>
 			<top>500</top>
 			<width>200</width>
 			<height>50</height>
