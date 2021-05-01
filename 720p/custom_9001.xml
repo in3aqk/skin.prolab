@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- PROLAB SETTINGS page-->
 <window id="9001">
 	<defaultcontrol always="true">9010</defaultcontrol>
 	<controls>
@@ -26,20 +27,6 @@
 			<onclick>ActivateWindow(Settings)</onclick>
 			<onleft>9014</onleft>
 			<onright>9011</onright>
-		</control>
-		<control type="button" id="9011">
-			<description>Libreelec settings</description>
-			<left>300</left>
-			<top>500</top>
-			<width>200</width>
-			<height>50</height>
-			<label>Libreelec</label>
-			<font>font14_title</font>
-			<textcolor>white</textcolor>
-			<focusedcolor>white</focusedcolor>
-			<onclick>RunAddon(service.libreelec.settings)</onclick>
-			<onleft>9010</onleft>
-			<onright>9012</onright>
 		</control>
 		<control type="button" id="9012">
 			<description>Libreelec settings</description>
