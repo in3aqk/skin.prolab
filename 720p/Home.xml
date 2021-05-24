@@ -40,18 +40,18 @@
 			<visible>true</visible>
 			<colordiffuse>FFFFFFFF</colordiffuse>
 			<fadetime>200</fadetime>
-			<texturefocus >music.png</texturefocus >
-			<texturenofocus >music.png</texturenofocus >
+			<texturefocus>music_home.png</texturefocus>
+			<texturenofocus>music_home.png</texturenofocus>
 			<aspectratio>keep</aspectratio>
 			<label></label>
-			<onclick>ActivateWindow(Music)</onclick>
+			<onclick>RunAddon(plugin.audio.player.prolab)</onclick>
 			<onleft>9102</onleft>
 			<onright>9102</onright>
 		</control>
 		<control type="button" id="9102">
 			<description>Bluetooth Button</description>
 			<top>250</top>
-			<left>700</left>
+			<left>850</left>
 			<width>256</width>
 			<height>256</height>
 			<visible>true</visible>

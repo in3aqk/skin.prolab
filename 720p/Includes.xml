@@ -842,8 +842,8 @@
 	</include>
 	<include name="MainWindowMouseButtons">
 		<control type="group">
-			<left>120r</left>
-			<top>55r</top>
+			<left>150r</left>
+			<top>80r</top>
 			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>system.getbool(input.enablemouse)</visible>
@@ -851,8 +851,8 @@
 				<description>Back push button</description>
 				<left>0</left>
 				<top>0</top>
-				<width>45</width>
-				<height>45</height>
+				<width>65</width>
+				<height>65</height>
 				<label>1036</label>
 				<font/>
 				<onclick>back</onclick>
@@ -865,19 +865,19 @@
 			</control>
 			<control type="image">
 				<description>Back Icon</description>
-				<left>5</left>
+				<left>4</left>
 				<top>5</top>
-				<width>35</width>
-				<height>35</height>
+				<width>60</width>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_back.png</texture>
 			</control>
 			<control type="button">
 				<description>Home push button</description>
-				<left>55</left>
+				<left>75</left>
 				<top>0</top>
-				<width>45</width>
-				<height>45</height>
+				<width>65</width>
+				<height>65</height>
 				<label>31003</label>
 				<font/>
 				<onclick>ActivateWindow(home)</onclick>
@@ -890,15 +890,16 @@
 			</control>
 			<control type="image">
 				<description>Home Icon</description>
-				<left>60</left>
+				<left>78</left>
 				<top>5</top>
-				<width>35</width>
-				<height>35</height>
+				<width>60</width>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_home.png</texture>
 			</control>
 		</control>
 	</include>
+	<!-- Now Playing last line below -->
 	<include name="CommonNowPlaying">
 		<control type="group">
 			<visible>Player.HasMedia + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + !Control.IsVisible(507)</visible>
@@ -907,10 +908,10 @@
 			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
 			<control type="button">
 				<description>push button</description>
-				<left>30</left>
-				<top>55r</top>
-				<width>45</width>
-				<height>45</height>
+				<left>20</left>
+				<top>84r</top>
+				<width>65</width>
+				<height>65</height>
 				<label>31003</label>
 				<font/>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
@@ -923,48 +924,48 @@
 			</control>
 			<control type="image">
 				<description>Player Icon</description>
-				<left>35</left>
-				<top>50r</top>
-				<width>35</width>
-				<height>35</height>
+				<left>20</left>
+				<top>80r</top>
+				<width>60</width>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_player.png</texture>
 			</control>
 			<control type="label">
-				<left>85</left>
-				<top>53r</top>
+				<left>105</left>
+				<top>80r</top>
 				<width>700</width>
 				<height>20</height>
 				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font14</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!VideoPlayer.HasEpg | !VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
-				<left>85</left>
-				<top>53r</top>
+				<left>105</left>
+				<top>60r</top>
 				<width>700</width>
 				<height>20</height>
 				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[PVR.EpgEventElapsedTime] / $INFO[PVR.EpgEventDuration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font14</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="label">
-				<left>85</left>
-				<top>32r</top>
+				<left>105</left>
+				<top>50r</top>
 				<width>700</width>
 				<height>20</height>
 				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>font12</font>
+				<font>font14</font>
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasAudio</visible>

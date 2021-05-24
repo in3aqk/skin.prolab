@@ -8,7 +8,7 @@
 				<left>70</left>
 				<top>78</top>
 				<width>690</width>
-				<height>561</height>
+				<height>500</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>50</onup>
@@ -188,7 +188,7 @@
 				<left>760</left>
 				<top>85</top>
 				<width>25</width>
-				<height>550</height>
+				<height>510</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -200,10 +200,11 @@
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(50)</visible>
 			</control>
+			<!-- RIGHT FANART -->
 			<control type="group">
 				<depth>DepthContent-</depth>
-				<left>850</left>
-				<top>100</top>
+				<left>855</left>
+				<top>30</top>
 				<visible>Control.IsVisible(50)</visible>
 				<control type="image">
 					<left>0</left>

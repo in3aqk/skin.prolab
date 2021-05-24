@@ -72,6 +72,7 @@
 			<include>VisibleFadeEffect</include>
 		</control>
 	</include>
+	<!-- Background of lists ecc -->
 	<include name="ContentPanelBackgrounds">
 		<control type="image">
 			<depth>DepthFloor</depth>
@@ -94,16 +95,17 @@
 					<left>50</left>
 					<top>60</top>
 					<width>750</width>
-					<height>600</height>
+					<height>550</height>
 					<texture border="15">ContentPanel.png</texture>
 				</control>
-				<control type="image">
+				
+				<!-- <control type="image">
 					<left>50</left>
 					<top>652</top>
 					<width>750</width>
 					<height>64</height>
 					<texture border="15">ContentPanelMirror.png</texture>
-				</control>
+				</control> -->
 			</control>
 			<control type="group">
 				<include>VisibleFadeEffect</include>
