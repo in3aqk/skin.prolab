@@ -3,8 +3,8 @@
 	<animation effect="fade" start="0" end="100" time="150">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
 	<coordinates>
-		<left>860</left>
-		<top>640</top>
+		<left>300</left>
+		<top>300</top>
 	</coordinates>
 	<controls>
 		<control type="group">
@@ -13,8 +13,8 @@
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>400</width>
-				<height>70</height>
+				<width>600</width>
+				<height>100</height>
 				<colordiffuse>EEFFFFFF</colordiffuse>
 				<texture border="12">OverlayDialogBackground.png</texture>
 			</control>
@@ -31,8 +31,8 @@
 				<left>75</left>
 				<top>15</top>
 				<width>310</width>
-				<height>18</height>
-				<font>font12_title</font>
+				<height>25</height>
+				<font>font18_title</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -42,10 +42,10 @@
 			<control type="fadelabel" id="402">
 				<description>Line 2 Label</description>
 				<left>75</left>
-				<top>35</top>
+				<top>45</top>
 				<width>310</width>
-				<height>20</height>
-				<font>font12_title</font>
+				<height>30</height>
+				<font>font18_title</font>
 				<textcolor>grey2</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
