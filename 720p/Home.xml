@@ -62,7 +62,7 @@
 			<texturenofocus>bluetooth.png</texturenofocus>
 			<aspectratio>keep</aspectratio>
 			<label></label>
-			<onclick>ActivateWindow(Videos)</onclick>
+			<onclick>RunAddon(script.prolab.bluetooth)</onclick>
 			<onleft>9101</onleft>
 			<onright>9101</onright>
 		</control>									

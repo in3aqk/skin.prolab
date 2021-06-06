@@ -840,6 +840,40 @@
 			<texture>Confluence_Logo.png</texture>
 		</control>
 	</include>
+		<include name="GenericToHomeFooter">
+		<control type="group">
+			<left>150r</left>
+			<top>80r</top>
+			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
+			<visible>system.getbool(input.enablemouse)</visible>
+			<control type="button">
+				<description>Home push button</description>
+				<left>75</left>
+				<top>0</top>
+				<width>65</width>
+				<height>65</height>
+				<label>31003</label>
+				<font/>
+				<onclick>ActivateWindow(home)</onclick>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+			</control>
+			<control type="image">
+				<description>Home Icon</description>
+				<left>78</left>
+				<top>5</top>
+				<width>60</width>
+				<height>60</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icon_home.png</texture>
+			</control>
+		</control>
+	</include>
 	<include name="MainWindowMouseButtons">
 		<control type="group">
 			<left>150r</left>
